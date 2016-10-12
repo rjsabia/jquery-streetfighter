@@ -30,7 +30,7 @@ body{
 	background-image: url('../images/ryu-standing-still.png');
 }
 .ryu-ready{
-	background-image: : url('../images/ryu-ready-position.gif');
+	background-image: url('../images/ryu-ready-position.gif');
 }
 
 .ryu-throwing{
