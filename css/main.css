@@ -53,4 +53,15 @@ body{
 	position: absolute;
 	z-index: 10;
 }
-
+/*.game-play{
+	display: block;
+	font-size: 50px;
+	width: 600px;
+	font-family: comical, sans-serif; 
+}
+.game-play p{
+	color: black;
+	font-size: 25px;
+	line-height: 45px;
+	width: 50%;
+}
