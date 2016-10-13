@@ -13,6 +13,8 @@ $(document).ready(function() {
 	// He gets into throw with hadouken fireball
 	.mousedown(function() {
 		// console.log('mousedown')
+		// play hadouken sound
+		playHadouken();
 		$('.ryu-ready').hide();
 		$('.ryu-throwing').show();
 		$('.hadouken').finish().show().animate( 
@@ -31,6 +33,11 @@ $(document).ready(function() {
 		$('.ryu-ready').show();
 	});
 });
+function playHadouken () {
+	$('#hadouken-sound')[0].volume = 0.5;
+	$('#hadouken-sound')[0].load();
+	$('#hadouken-sound')[0].play();
+}
 // ***************************************
 
 
