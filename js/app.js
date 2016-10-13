@@ -15,7 +15,14 @@ $(document).ready(function() {
 		// console.log('mousedown')
 		$('.ryu-ready').hide();
 		$('.ryu-throwing').show();
-		$('.hadouken').show();
+		$('.hadouken').finish().show().animate( 
+			{'left': '1020px'},
+			500,
+			function() {
+				$('.hadouken').hide();
+				$('.hadouken').css('left', '610px');
+			}
+		);
 	})
 	// This returns ryu to ready position
 	.mouseup(function() {
