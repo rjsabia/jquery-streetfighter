@@ -35,14 +35,19 @@ $(document).ready(function() {
 	$(document).keydown(function(e) {
 		if (e.keyCode == 88) {
 			// this is where music function go's
+			playCoolguy();
 			$('.ryu-ready').hide();
+			// $('.ryu-still').hide();
 			$('.ryu-cool').show();
 		}
 	}).keyup(function(e) {
 		if (e.keyCode == 88) {
-			// $('ryu-still').show();
-			$('.ryu-ready').show();
+		    $('#coolguy-sound')[0].pause();
+     	    $('#coolguy-sound')[0].load();
+		    $('ryu-still').show();
+			// $('.ryu-ready').show();
 			$('.ryu-cool').hide();
+			
 		 }
 	});
 });
@@ -52,6 +57,19 @@ function playHadouken () {
 	$('#hadouken-sound')[0].play();
 }
 
+// function playCoolguy () {
+// 	$('#coolguy-sound')[0].volume = 0.5;
+// 	$('#coolguy-sound')[0].load();
+// 	$('#coolguy-sound')[0].play();
+// }
+
+var coolSound = false;
+function playCoolguy () {
+  coolSound = !coolSound;
+  if (coolSound) {
+    $('#coolguy-sound')[0].play();
+  }
+}
 // ***************************************
 
 
