@@ -45,7 +45,7 @@ $(document).ready(function() {
 		    $('#coolguy-sound')[0].pause();
      	    $('#coolguy-sound')[0].load();
 		    $('ryu-still').show();
-			// $('.ryu-ready').show();
+		    $('.ryu-ready').show();
 			$('.ryu-cool').hide();
 			
 		 }

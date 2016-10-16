@@ -54,16 +54,31 @@ body{
 	z-index: 10;
 }
 .game-play{
+	display: block;
 	position: absolute;
 	top: 0;
-	left:0;
+	left:700px;
 	font-size: 50px;
 	width: 600px;
-	font-family: comical, sans-serif; 
+	font-family: impact; 
 }
 .game-play p{
 	color: black;
-	font-size: 25px;
+	font-size: 30px;
 	line-height: 45px;
 	width: 50%;
+}
+.game-play p + p{
+	/*color: red;*/
+	font-size: 30px;
+	line-height: 45px;
+	width: 50%;
+	margin-left: 100px;
+	animation-name: ryu-sense;
+	animation-duration: 1.5s;
+	animation-iteration-count: infinite;
+}
+@keyframes ryu-sense{
+	from {color: purple;}
+	to{color: red;}
 }
